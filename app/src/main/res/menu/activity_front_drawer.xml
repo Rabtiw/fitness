@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_dairy"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Dairy" />
+        <item
+            android:id="@+id/nav_rd"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Recipe Discovery" />
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Progress" />
+        <item
+            android:id="@+id/nav_nutrition"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Nutrition" />
+        <item
+            android:id="@+id/nav_newm"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="New Meal" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Edit Profile" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

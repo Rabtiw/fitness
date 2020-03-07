@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahe.fitness.first"
+    android:background="@drawable/gym2">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="394dp"
+        android:layout_height="14dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="66dp"
+        android:progress="14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:fontFamily="sans-serif"
+        android:text="What is your goal?"
+        android:textColor="#FBF3F3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="82dp"
+        android:backgroundTint="#92E6CA"
+        android:onClick="page2"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/lw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_marginEnd="23dp"
+            android:buttonTint="#FAF7F7"
+            android:onClick="val"
+            android:text="Loose weight"
+            android:textColor="#FAF2F2"
+            android:textSize="30sp" />
+        <RadioButton
+            android:id="@+id/mw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintain weight"
+            android:buttonTint="#FAF7F7"
+            android:textColor="#FAF2F2"
+            android:textSize="30sp"
+            android:onClick="val"/>
+        <RadioButton
+            android:id="@+id/gw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gain weight"
+            android:textColor="#FAF2F2"
+            android:buttonTint="#FAF7F7"
+            android:textSize="30sp"
+            android:onClick="val"/>
+
+
+    </RadioGroup>
+
+</RelativeLayout>
